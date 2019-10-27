@@ -58,7 +58,17 @@
       }
 
       .btn {
+        .btn-styles(@btn-bg-color, white);
+        transition-property: background-color, color;
+        transition-duration: 0.35s;
+
+        &:hover {
+          background-color: white;
+          color: @btn-bg-color;
+        }
       }
+
+      
     }
 
     .walk-img {
