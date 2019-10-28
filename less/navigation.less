@@ -15,14 +15,39 @@
         .flex-nav;
         width: 25%;
         padding-bottom: 1%;
+        transition-property: width, padding;
+        transition-duration: 1s;
+        
+        &:hover {
+            width: 33%;
+            padding-bottom: 1.5%;
+    
+        a {
+            font-size: 1.65rem;
+            color: slategray;
 
-        @media @phone {
-            width: 75%;
+            &:hover {
+                color: black;
+                }
+            }
+    
         }
 
         a {
-            font-size: 1.3rem;
+            font-size: 1.45rem;
             color: black;
+            transition-property: color, font-size;
+            transition-duration: 1s;
+        }
+
+        @media @phone {
+            width: 75%;
+
+            &:hover {
+                width: 75%;
+                padding-bottom: 1%;
+                font-size: 1.45rem;
+            }
         }
     }
 

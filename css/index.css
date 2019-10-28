@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -187,15 +191,35 @@ p {
   justify-content: space-between;
   width: 25%;
   padding-bottom: 1%;
+  transition-property: width, padding;
+  transition-duration: 1s;
+}
+.top-header nav:hover {
+  width: 33%;
+  padding-bottom: 1.5%;
+}
+.top-header nav:hover a {
+  font-size: 1.65rem;
+  color: slategray;
+}
+.top-header nav:hover a:hover {
+  color: black;
+}
+.top-header nav a {
+  font-size: 1.45rem;
+  color: black;
+  transition-property: color, font-size;
+  transition-duration: 1s;
 }
 @media (max-width: 500px) {
   .top-header nav {
     width: 75%;
   }
-}
-.top-header nav a {
-  font-size: 1.3rem;
-  color: black;
+  .top-header nav:hover {
+    width: 75%;
+    padding-bottom: 1%;
+    font-size: 1.45rem;
+  }
 }
 .top-header img {
   border-radius: 6px;
@@ -291,9 +315,23 @@ footer {
   transition-property: background-color, color;
   transition-duration: 0.35s;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    padding: 6% 43%;
+  }
+}
 .home .walk .walk-text .btn:hover {
   background-color: white;
   color: #22283A;
+}
+.home .walk .walk-text .btn-div {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn-div {
+    display: flex;
+    justify-content: center;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -315,5 +353,6 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     padding: 50px 0;
+    padding-bottom: 20px;
   }
 }
