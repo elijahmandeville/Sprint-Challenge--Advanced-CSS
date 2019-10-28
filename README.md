@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites have multiple layouts for different set screen sizes while responsive websites look great regardless of what screen you view it on.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first design means that we design for a mobile device first and then add to the design for desktop view after. The reverse is true for desktop first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the font size to 10px and allows us to calcuate the rem's size much easier; it's a baseline number
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing basically allows us to write code in different, easier ways. The preprocessor will magically translate it to the "proper" / primary language
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept is the nesting of elements within eachother when using LESS. The same is true for what gives me trouble. All the nesting can get a little overwhelming when you throw media queries and such into the mix.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -51,17 +61,17 @@ Follow these steps to set up your project:
 ### Git Set up
 
 - [*] Create a forked copy of this project.
-- [ *] Add your project manager as collaborator on Github.
-- [ *] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ *] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ *] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ *] Push commits: git push origin `<firstName-lastName>`.
+- [*] Add your project manager as collaborator on Github.
+- [*] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [*] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [*] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [*] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [*] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [*] Add your project manager as a reviewer on the pull-request
+- [*] Your project manager will count the project as complete by merging the branch back into master.
  
 
 ### Preprocessor Set up
